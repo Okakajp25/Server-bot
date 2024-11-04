@@ -38,7 +38,7 @@ const Restart = new EmbedBuilder()
 .setColor('Orange')
 .setTitle('Server is Restarting')
 .setTimestamp()
-.setDescription('Server is Restarting!\nIP: minecraft.okakey.com\nPort: 19132')
+.setDescription(`Server is Restarting!\nIP: minecraft.okakey.com\nPort: 19132\n${new Date().getTimezoneOffset('+0900')}`)
 
 function sleep(waitMsec) {
 	var startMsec = new Date();
