@@ -13,7 +13,7 @@ export default {
 			headers: {
 				"Accept": "application/json",
 				"Content-Type": "application/json",
-				"Authorization": "Bearer ptlc_V8uozU7AcoHZefVB3IY1ZXL2fwfFdN7ZxsieRj24prJ",
+				"Authorization": "Bearer ptlc_rWlaR0URcI1smHos3dlSwMkOYCeXZ33kYnkAkUN4LdH",
 			}
 		})
 		await interaction.reply(`Log:\n ${server}`);
