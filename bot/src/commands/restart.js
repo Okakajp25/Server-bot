@@ -6,6 +6,7 @@ export default {
 		description: 'Server Restart',
 	},
 	async execute(interaction) {
+		await interaction.deferReply();
 		const command = await fetch('https://minecraft.okakey.com/api/client/servers/d87510d2/command', {
 			method: 'POST',
 			body: JSON.stringify({
