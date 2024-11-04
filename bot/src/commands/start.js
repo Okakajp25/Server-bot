@@ -1,3 +1,4 @@
+import { EmbedBuilder } from 'discord.js';
 /** @type {import('./index.js').Command} */
 export default {
 	data: {
@@ -16,6 +17,12 @@ export default {
 				"Authorization": "Bearer ptlc_rWlaR0URcI1smHos3dlSwMkOYCeXZ33kYnkAkUN4LdH",
 			}
 		})
-		await interaction.reply(`Log:\n ${server}`);
+		await interaction.reply();
 	},
 };
+
+const Start = new EmbedBuilder()
+.setColor('Green')
+.setTitle('Server is Starting')
+.setTimestamp()
+.setDescription('IP: minecraft.okakry.com\nPort: 19132')
