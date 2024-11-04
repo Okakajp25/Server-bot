@@ -17,11 +17,11 @@ export default {
 				"Authorization": "Bearer ptlc_rWlaR0URcI1smHos3dlSwMkOYCeXZ33kYnkAkUN4LdH",
 			}
 		})
-		await interaction.reply({ embeds: [Start]});
+		await interaction.reply({ embeds: [Restart]});
 	},
 };
 
-const Start = new EmbedBuilder()
+const Restart = new EmbedBuilder()
 .setColor('Orange')
 .setTitle('Server is Restarting')
 .setTimestamp()
