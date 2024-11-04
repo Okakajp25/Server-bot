@@ -30,7 +30,7 @@ export default {
 				"Authorization": "Bearer ptlc_rWlaR0URcI1smHos3dlSwMkOYCeXZ33kYnkAkUN4LdH",
 			}
 		})
-		await interaction.reply({ embeds: [Restart]});
+		await interaction.editReply({ embeds: [Restart]});
 	},
 };
 
