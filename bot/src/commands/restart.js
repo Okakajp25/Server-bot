@@ -10,7 +10,7 @@ export default {
 		const command = await fetch('https://minecraft.okakey.com/api/client/servers/d87510d2/command', {
 			method: 'POST',
 			body: JSON.stringify({
-				command: "say Server is Restart after 5seconds"
+				command: "say Server is Restart after 1minutes"
 			}),
 			headers: {
 				"Accept": "application/json",
@@ -18,7 +18,7 @@ export default {
 				"Authorization": "Bearer ptlc_rWlaR0URcI1smHos3dlSwMkOYCeXZ33kYnkAkUN4LdH",
 			}
 		})
-		sleep(5000)
+		sleep(60000)
 		const server = await fetch('https://minecraft.okakey.com/api/client/servers/d87510d2/power', {
 			method: 'POST',
 			body: JSON.stringify({
