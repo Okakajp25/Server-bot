@@ -7,7 +7,7 @@ export default {
 	},
 	async execute(interaction) {
 		await interaction.deferReply();
-		const command = await fetch('https://minecraft.okakey.com/api/client/servers/d87510d2/command', {
+		const command = await fetch('https://minecraft.okakey.com/api/client/servers/d0fdc5a3/command', {
 			method: 'POST',
 			body: JSON.stringify({
 				command: "say Server is Restart after 1minutes"
@@ -15,11 +15,11 @@ export default {
 			headers: {
 				"Accept": "application/json",
 				"Content-Type": "application/json",
-				"Authorization": "Bearer ptlc_rWlaR0URcI1smHos3dlSwMkOYCeXZ33kYnkAkUN4LdH",
+				"Authorization": "Bearer ptlc_bq16WdDESYCieNI3xPJtm1A6ii2J9sYvjoybr8QCogs",
 			}
 		})
 		sleep(60000)
-		const server = await fetch('https://minecraft.okakey.com/api/client/servers/d87510d2/power', {
+		const server = await fetch('https://minecraft.okakey.com/api/client/servers/d0fdc5a3/power', {
 			method: 'POST',
 			body: JSON.stringify({
 				signal: "restart"
@@ -27,7 +27,7 @@ export default {
 			headers: {
 				"Accept": "application/json",
 				"Content-Type": "application/json",
-				"Authorization": "Bearer ptlc_rWlaR0URcI1smHos3dlSwMkOYCeXZ33kYnkAkUN4LdH",
+				"Authorization": "Bearer ptlc_bq16WdDESYCieNI3xPJtm1A6ii2J9sYvjoybr8QCogs",
 			}
 		})
 		await interaction.editReply({ embeds: [Restart]});

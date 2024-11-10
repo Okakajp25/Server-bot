@@ -6,7 +6,7 @@ export default {
 		description: 'Server Start',
 	},
 	async execute(interaction) {
-		const server = await fetch('https://minecraft.okakey.com/api/client/servers/d87510d2/power', {
+		const server = await fetch('https://minecraft.okakey.com/api/client/servers/d0fdc5a3/power', {
 			method: 'POST',
 			body: JSON.stringify({
 				signal: "start"
@@ -14,7 +14,7 @@ export default {
 			headers: {
 				"Accept": "application/json",
 				"Content-Type": "application/json",
-				"Authorization": "Bearer ptlc_rWlaR0URcI1smHos3dlSwMkOYCeXZ33kYnkAkUN4LdH",
+				"Authorization": "Bearer ptlc_bq16WdDESYCieNI3xPJtm1A6ii2J9sYvjoybr8QCogs",
 			}
 		})
 		await interaction.reply({ embeds: [Start]});
